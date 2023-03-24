@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+/* GENERALE */
+:root{
+    --colorRed:#dc2626;
+    --colorWhite:#fff;
+    --colorYellow:#f9ff33;
+    --colorCendre: #1a1b1d;
+}
+
+/* HEADER */
+.menavbar {
+    background-color: var(--colorRed);
+}
+.fs-4, .nav-link{
+    color: var(--colorWhite);
+}
+.nav-link:hover{
+    color: var(--colorYellow);
+}
+
+/* ACCUEIL */
+.btn-secondary{
+    background-color: var(--colorRed);
+    border:none;
+}
+
+/* FOOTER */
+footer{
+    background-color: var(--colorCendre);
+}

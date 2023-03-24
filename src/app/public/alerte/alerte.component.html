@@ -1,0 +1,95 @@
+
+<form class="container mt-5">
+    
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Votre nom:</label>
+        <input type="text" class="form-control" formControlName="name" />
+    </div>
+    
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Votre adresse:</label>
+        <input type="text" class="form-control" formControlName="address" />
+    </div>
+    
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Votre numéro de téléphone:</label>
+        <input type="text" class="form-control" formControlName="phoneNumber" />
+    </div>
+
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Description de la localisation:</label>
+        <textarea class="form-control" formControlName="emergencyDescription"></textarea>
+    </div>
+
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Votre latitude</label>
+        <select formControlName="emergencyLatitude" class="form-control">
+            <option value="">Sélectionner une option</option>
+            <option value="abidjan">Abidjan(5.3364)</option>
+            <option value="bouake">Bouaké(7.6833)</option>
+            <option value="yamoussokro">Yamoussoukro(6.8161)</option>
+            <option value="sanpedro">San-Pédro(4.7704)</option>
+            <option value="korhogo">Korhogo(9.4578)</option>
+            <option value="man">Man(7.4004)</option>
+        </select>
+    </div>
+
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Votre longitude</label>
+        <select formControlName="emergencyLongitude" class="form-control">
+            <option value="">Sélectionner une option</option>
+            <option value="abidjan">Abidjan(-4.0267)</option>
+            <option value="bouake">Bouaké(-5.0331)</option>
+            <option value="yamoussokro">Yamoussoukro(-5.2742)</option>
+            <option value="sanpedro">San-Pédro(-6.6400)</option>
+            <option value="korhogo">Korhogo(-5.6294)</option>
+            <option value="man">Man(-7.5500)</option>
+        </select>
+    </div>
+
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Type d'incident:</label>
+        <select formControlName="emergencyType" class="form-control">
+            <option value="">Sélectionner une option</option>
+            <option value="incendie">Incendie</option>
+            <option value="accident-route">Accident de la route</option>
+            <option value="inondation">Inondation</option>
+            <option value="urgence-medicale">Urgence médicale</option>
+            <option value="agression">Agression</option>
+            <option value="vol">Vol</option>
+            <option value="autre">Autre</option>
+        </select>
+    </div>
+
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Gravité de l'incident:</label>
+        <input type="text" class="form-control" formControlName="emergencyGravite" />
+    </div>
+
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Nombre de personnes impliquées:</label>
+        <input type="number" class="form-control" formControlName="numberOfPeople" />
+    </div>
+
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">État de santé des personnes impliquées:</label>
+        <textarea class="form-control" formControlName="peopleCondition"></textarea>
+    </div>
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Type de véhicule impliqué:</label>
+        <input type="text" class="form-control" formControlName="vehicleType" />
+    </div>
+
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Instructions spécifiques:</label>
+        <textarea class="form-control" formControlName="instructions"></textarea>
+    </div> 
+
+    <div class="form-group mb-5">
+        <label class="form-label fw-bold">Inserer une image:</label>
+        <input type="file" class="form-control" formControlName="emergencyImage">
+    </div> 
+
+        <button type="submit" class="btn btn-danger"><a routerLink="/admin/dashboard/gspm" class="nav-link">Envoyer l'alerte</a></button>
+          
+</form>
